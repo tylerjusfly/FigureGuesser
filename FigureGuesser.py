@@ -1,9 +1,13 @@
 print("Hello, this is my FigureGuesser Game. Guess a number maybe you might be lucky.")
 
+#importing random. random guess any figure and prints it out
+
 import random
+#importing time and delaying it for 3sec
 import time
 time.sleep(3)
 
+#passing random to var and giving it a minimum and maximum guessing number
 num = random.randrange(1, 101)
 
 guess =""
@@ -14,7 +18,7 @@ tries_limit = 6
 while num != guess and tries != tries_limit:
     guess =int(input("enter a guess: "))
     tries+=1
-    
+ #putting the optionals statements into practice   
     if guess > num:
         print("too high")
     elif guess < num:
